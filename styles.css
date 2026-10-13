@@ -31,3 +31,18 @@
   .pillar-card.tone-blue h3{font-size:16px;letter-spacing:-.95px}
   .service-body h3{font-size:27px;letter-spacing:-1.1px}
 }
+
+/* Ajuste mobile para exibir Psicopedagogia inteira */
+@media (max-width:700px){
+  .service-body h3{max-width:100%;font-size:clamp(22px,7.2vw,27px);line-height:1;letter-spacing:-1.15px;white-space:nowrap;overflow:visible}
+}
+@media (max-width:400px){
+  .service-body h3{font-size:24px;letter-spacing:-1.2px}
+}
+/* Correção específica do primeiro serviço no mobile */
+@media (max-width:700px){
+  .service-card:first-child .service-body h3{font-size:clamp(18px,4.8vw,22px);letter-spacing:-1.25px;white-space:nowrap;max-width:100%;overflow:visible}
+}
+@media (max-width:400px){
+  .service-card:first-child .service-body h3{font-size:24px;letter-spacing:-1.2px}
+}
