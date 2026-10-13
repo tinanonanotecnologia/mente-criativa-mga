@@ -17,3 +17,17 @@
 @media(max-width:600px){.gallery-hero{padding-top:30px}.gallery-hero h1{font-size:clamp(39px,11vw,54px);overflow-wrap:normal}.gallery-hero>p:last-child{font-size:15px}.gallery-grid{grid-template-columns:minmax(0,1fr);gap:20px}.gallery-panel{padding:20px 12px}.gallery-heading h2{font-size:34px}.gallery-frame{border-radius:12px}.gallery-caption{min-height:70px;padding:14px 2px}.gallery-caption strong{font-size:23px}.gallery-contact .contact-panel{grid-template-columns:minmax(0,1fr);padding:24px 18px}.gallery-contact .contact-actions{align-items:stretch}.gallery-contact .contact-actions .button{width:100%;min-width:0}.gallery-back{font-size:12px}}
 @media(max-width:700px){.nav-shell{min-width:0;gap:12px}.nav-shell .brand{max-width:calc(100% - 51px)}.menu-toggle{flex:0 0 39px}.shell>*{min-width:0}.button{max-width:100%}.contact-actions .button{white-space:normal;min-width:0}.gallery-page .ambient{display:none}.gallery-page .footer-contact{overflow-wrap:anywhere}}
 @media(prefers-reduced-motion:reduce){.gallery-card::before{animation:none}.gallery-card{transition:none}}
+
+/* Ajustes exclusivos para cards no mobile */
+@media (max-width:700px){
+  .pillar-card{min-width:0;overflow:hidden}
+  .pillar-card h3{font-size:clamp(17px,5.2vw,21px);line-height:1.02;letter-spacing:-.55px;overflow-wrap:anywhere;word-break:normal}
+  .pillar-card.tone-blue h3{font-size:clamp(16px,4.8vw,19px);letter-spacing:-.8px}
+  .service-card{min-width:0}
+  .service-body{padding-inline:14px}
+  .service-body h3{font-size:clamp(25px,8vw,31px);line-height:1;letter-spacing:-1px;overflow-wrap:normal;word-break:normal}
+}
+@media (max-width:400px){
+  .pillar-card.tone-blue h3{font-size:16px;letter-spacing:-.95px}
+  .service-body h3{font-size:27px;letter-spacing:-1.1px}
+}
